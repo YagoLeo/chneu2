@@ -13,8 +13,12 @@ export default function Home() {
                 decoding="async"
                 data-nimg="1"
                 className="hidden md:block py-4 w-auto h-[4.5rem] md:h-20"
-                src="/_next/static/media/logo.a4fe266a.svg"
-                style={{ color: 'transparent' }}
+                src="logo1.png"
+                style={{
+                  color: 'transparent',
+                  width: '100px',
+                  height: '100px',
+                }}
                 data-px-source="true"
               />
               <img
@@ -25,7 +29,7 @@ export default function Home() {
                 decoding="async"
                 data-nimg="1"
                 className="md:hidden py-4 w-auto h-[4.5rem] md:h-20"
-                src="/_next/static/media/logo.a4fe266a.svg"
+                src="logo.png"
                 style={{ color: 'transparent' }}
                 data-px-source="true"
               />
@@ -88,17 +92,16 @@ export default function Home() {
         <div className="relative z-10 vk-container flex-grow flex items-center justify-center w-full">
           <div className="flex-grow px-8 md:px-24 overflow-hidden">
             <div className="aspect-[6.13/1] mx-auto overflow-hidden w-full">
-              <div className="" style={{ width: '100%', height: '100%' }}>
-                <canvas
-                  style={{
-                    verticalAlign: 'top',
-                    width: '1030px',
-                    height: '168px',
-                  }}
-                  width="2060"
-                  height="336"
-                ></canvas>
-              </div>
+              <img
+                alt=""
+                loading="lazy"
+                decoding="async"
+                data-nimg="1"
+                className="w-2/3 h-auto object-cover mx-auto"
+                src="logo.png"
+                data-px-source="true"
+                style={{ color: 'transparent', width: '325px' }}
+              ></img>
             </div>
           </div>
         </div>
@@ -221,7 +224,7 @@ export default function Home() {
           decoding="async"
           data-nimg="1"
           className="hidden md:block absolute left-[-3%] top-[-15%] h-[calc(16rem+10vw)] w-auto"
-          src="/_next/static/media/left-misc.31cd35e5.svg"
+          src="/left-misc.svg"
           style={{ color: 'transparent' }}
           data-px-source="true"
         />
@@ -235,10 +238,10 @@ export default function Home() {
               decoding="async"
               data-nimg="1"
               className="md:w-[85%] absolute left-0 hidden md:block"
-              srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fout-mission.0f2d2080.png&amp;w=3840&amp;q=75 1x"
-              src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fout-mission.0f2d2080.png&amp;w=3840&amp;q=75"
-              style={{ color: 'transparent' }}
-              data-px-src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fout-mission.0f2d2080.png&amp;w=3840&amp;q=75"
+              srcSet="https://www.hkic.org.hk/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fout-mission.0f2d2080.png&w=3840&q=75"
+              src="https://www.hkic.org.hk/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fout-mission.0f2d2080.png&w=3840&q=75"
+              style={{ color: 'transparent', width: '90vw' }}
+              data-px-src="https://www.hkic.org.hk/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fout-mission.0f2d2080.png&w=3840&q=75"
               data-px-source="true"
             />
             <div className=" -top-4 md:top-0 bottom-0 m-auto h-auto  md:mt-24 md:my-24 md:p-24 p-16 bg-primary-50 md:w-[85%] mr-0 relative z-20">
@@ -246,10 +249,7 @@ export default function Home() {
               <div className="h-px bg-primary w-12 my-4"></div>
               <div className="text-lg leading-relaxed">
                 <p style={{ marginBottom: '10px' }}>
-                  香港投资管理有限公司（港投公司）由香港特区政府全资拥有。作为耐心资本，港投公司肩负着双重使命：在追求中长期合理财务回报的同时，更重要的是，通过支持香港创科、策略性产业的发展，提升香港长远的竞争力和经济活力。我们亦在促进香港特区政府与投、产、学、研不同界别之间的合作和协同上，发挥着重要角色。
-                </p>
-                <p>
-                  港投公司归一收纳管理包括「香港增长组合」、「大湾区投资基金」、「策略性创科基金」和「共同投资基金」共620亿港元的投资，并积极推进与三个关键主题有关的直接和共同投资，分别是硬科技、生命科技以及新能源/绿色科技，以及其相关应用。
+                  香港中欧投资管理有限公司（以下简称&ldquo;中欧投资&rdquo;）2013年在香港注册，公司注册号1971883，总部位于国际金融中心香港，注册资本1亿港币。公司秉承&ldquo;专业、创新、责任&rdquo;的核心价值观，专注于全球资产配置、跨境投资管理与战略资源整合，致力于为合作伙伴提供高效、稳健的资本增值服务，同时推动新兴市场经济的可持续发展。
                 </p>
               </div>
             </div>
@@ -269,27 +269,27 @@ export default function Home() {
               className="bg-white px-12 py-12 text-lg"
               style={{ opacity: 1 }}
             >
-              <h6 className="text-2xl font-semibold mb-4">重点主题</h6>
+              <h6 className="text-2xl font-semibold mb-4">核心优势</h6>
               <p className="text-neutral-500 leading-loose">
-                目前我们的投资重点围绕三大主题：「硬科技」、「生物科技」和「新能源/绿色科技」，以及相关应用。随着我们继续为香港的未来作出投资，将持续增加更多重点主题。
+                中欧投资的核心竞争力源自其卓越的团队背景与深厚的资源网络。公司法人代表曾先后担任三家中国上市企业高管，在战略决策、资本运作及跨国资源整合领域拥有逾二十年的实战经验。核心团队成员均来自国际知名金融机构，曾成功管理超万亿规模基金，并在新能源、工业、矿业、渔业、农业、基建、军工科技等多元化领域积累丰富投资经验。依托创始团队在中国政商界构建的长期战略合作关系，公司具备独特的资源协调能力，可高效链接政策支持、产业资本与跨境合作机遇。
               </p>
             </div>
             <div
               className="bg-white px-12 py-12 text-lg"
               style={{ opacity: 1 }}
             >
-              <h6 className="text-2xl font-semibold mb-4">生态圈建设</h6>
+              <h6 className="text-2xl font-semibold mb-4">聚焦新兴市场发展</h6>
               <p className="text-neutral-500 leading-loose">
-                我们在促进香港特区政府、业界、学术、科研和投资领域之间的协同效应方面担当重要角色。我们要求战略合作伙伴和投资组合內的公司为香港的未来发展作出贡献。我们优先考虑「平台」项目，其成功将有助于港投公司生态圈中其他合作伙伴和公司的发展。
+                中欧投资积极响应&ldquo;一带一路&rdquo;倡议，将非洲及中东地区作为战略布局重点。凭借对中国资本出海需求的深刻理解及对新兴市场的前瞻研判，通过搭建中非政商对话平台、引入中国产业投资、促进技术转移与产业孵化等方式，助力非洲经济重建。
               </p>
             </div>
             <div
               className="bg-white px-12 py-12 text-lg"
               style={{ opacity: 1 }}
             >
-              <h6 className="text-2xl font-semibold mb-4">跨境/全球合作平台</h6>
+              <h6 className="text-2xl font-semibold mb-4">使命与愿景</h6>
               <p className="text-neutral-500 leading-loose">
-                我们的合作伙伴和项目涵盖源自香港并以香港为基地的，也包括其他地区的企业和机遇。所有项目都必须符合我们的双重使命。
+                作为亚非资本互联的桥梁，中欧投资始终践行&ldquo;资本向善&rdquo;的理念。未来，公司将持续深化全球合作伙伴网络，通过专业投资管理能力与跨区域资源整合优势，为投资者创造长期价值，同时推动新兴市场产业链升级，实现经济效益与社会价值的共赢发展。
               </p>
             </div>
           </div>
@@ -304,7 +304,7 @@ export default function Home() {
           decoding="async"
           data-nimg="1"
           className="absolute left-[-20%] bottom-[-20%] h-[calc(16rem+10vw)] w-auto"
-          src="/_next/static/media/left-misc.31cd35e5.svg"
+          src="/left-misc.svg"
           style={{ color: 'transparent' }}
           data-px-source="true"
         />
@@ -316,7 +316,7 @@ export default function Home() {
           decoding="async"
           data-nimg="1"
           className="absolute right-[-3%] bottom-[-15%] h-[calc(16rem+10vw)] w-auto"
-          src="/_next/static/media/right-misc.15171b25.svg"
+          src="/right-misc.svg"
           style={{ color: 'transparent' }}
           data-px-source="true"
         />
@@ -354,13 +354,13 @@ export default function Home() {
                   decoding="async"
                   data-nimg="1"
                   className="w-2/3 h-auto object-cover mx-auto py-24 "
-                  src="/_next/static/media/logo.a4fe266a.svg"
+                  src="logo.png"
                   data-px-source="true"
                   style={{ color: 'transparent' }}
                 />
               </div>
               <p className=" md:w-2/3 text-xl font-semibold mb-2">
-                香港投资管理有限公司就「新资本投资者入境计划」下的「投资组合」委任基金经理及资产管理行政及相关服务的服务提供机构（2024年12月）
+                香港中欧投资管理有限公司就「新资本投资者入境计划」下的「投资组合」委任基金经理及资产管理行政及相关服务的服务提供机构（2024年12月）
               </p>
               <a
                 className="bg-primary text-white font-semibold text-lg px-4 py-3 my-6"
@@ -442,9 +442,13 @@ export default function Home() {
                 height="61"
                 decoding="async"
                 data-nimg="1"
-                className="pb-4 w-auto h-16"
-                src="/_next/static/media/logo.a4fe266a.svg"
-                style={{ color: 'transparent' }}
+                className="hidden md:block py-4 w-auto h-[4.5rem] md:h-20"
+                src="logo.png"
+                style={{
+                  color: 'transparent',
+                  width: '450px',
+                  height: '150px',
+                }}
                 data-px-source="true"
               />
             </div>
@@ -477,10 +481,15 @@ export default function Home() {
               <div>
                 <h3>与我们联系</h3>
                 <ul>
-                  <li className="normal-case">enquiry@hkic.org.hk</li>
+                  <li className="normal-case">0086-13168763779</li>
+                  <li className="normal-case">
+                    Rm D07,8/F, Kai Tak Fty Building, No.99king Fuk Street,
+                    Sanpokong, Kowloon, Hong Kong.
+                  </li>
+                  <li className="normal-case">chairman@chneu.hk</li>
                   <a
                     className="mt-2 h-12 w-12 bg-neutral-200 rounded-full flex items-center justify-center text-xl"
-                    href="mailto:enquiry@hkic.org.hk"
+                    href="mailto:chairman@chneu.hk"
                   >
                     <svg
                       stroke="currentColor"
@@ -500,7 +509,9 @@ export default function Home() {
           </div>
           <div className="border-t border-neutral-200 mt-12 gap-x-3 flex flex-col md:flex-row items-center">
             <div className="flex items-center py-6 text-neutral-500">
-              <p className="text-sm">© 2025 香港投资管理有限公司 版权所有。</p>
+              <p className="text-sm">
+                © 2025 香港中欧投资管理有限公司 版权所有。
+              </p>
             </div>
             <nav className="text-sm flex items-center gap-x-3 md:ml-auto capitalize text-neutral-500">
               <a href="privacy-and-cookies-notice">
