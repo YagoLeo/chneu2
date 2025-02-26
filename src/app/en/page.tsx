@@ -1,10 +1,12 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <div className="relative">
       <header>
         <div className="vk-container !px-3  md:!px-6">
           <div className="flex items-center py-2 md:py-4 justify-between">
-            <a href="/zh-Hans">
+            <Link href="/">
               <img
                 alt="HKIC"
                 loading="lazy"
@@ -33,7 +35,7 @@ export default function Home() {
                 style={{ color: 'transparent' }}
                 data-px-source="true"
               />
-            </a>
+            </Link>
             <div className="ml-auto hidden md:flex flex-col items-end gap-y-3">
               <div className="text-neutral-600 text-sm font-light flex items-center">
                 {/* <div className="flex items-center gap-x-4">
@@ -44,9 +46,9 @@ export default function Home() {
                   {/* <a hrefLang="zh-Hant-HK" className="false" href="/zh-Hant-HK">
                     繁
                   </a> */}
-                  <a className="font-medium" href="/zh-Hans">
+                  <Link className="font-medium" href="/">
                     简
-                  </a>
+                  </Link>
                   <a hrefLang="en" className="false" href="/en">
                     EN
                   </a>
