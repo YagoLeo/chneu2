@@ -108,7 +108,7 @@ export default function Home() {
                 style={{
                   color: 'transparent',
                   width: '500px',
-                  marginTop: '100px',
+                  marginTop: '20px',
                 }}
               ></img>
             </div>
@@ -258,7 +258,7 @@ export default function Home() {
               <div className="h-px bg-primary w-12 my-4"></div>
               <div className="text-lg leading-relaxed">
                 <p style={{ marginBottom: '10px' }}>
-                  香港中欧投资管理有限公司（以下简称&ldquo;中欧投资&rdquo;）2013年在香港注册，公司注册号1971883，总部位于国际金融中心香港，注册资本1亿港币。公司秉承&ldquo;专业、创新、责任&rdquo;的核心价值观，专注于全球资产配置、跨境投资管理与战略资源整合，致力于为合作伙伴提供高效、稳健的资本增值服务，同时推动新兴市场经济的可持续发展。
+                  香港中欧投资管理有限公司（以下简称&ldquo;中欧投资&rdquo;）2013年在香港注册，公司注册号1971883，总部位于国际金融中心香港，注册资本1亿港币。公司主营业务包括基金管理及矿产、工业、农业、渔业、商业、房地产、智能装备投资和贸易。公司秉承&ldquo;专业、创新、责任&rdquo;的核心价值观，专注于全球资产配置、跨境投资管理与战略资源整合，致力于为合作伙伴提供高效、稳健的资本增值服务，同时推动新兴市场经济的可持续发展。
                 </p>
               </div>
             </div>
