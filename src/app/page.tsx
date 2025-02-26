@@ -637,11 +637,7 @@ export default function Home() {
 
                   {/* 联系电话 */}
                   <li className="space-y-2">
-                    {[
-                      '0086-13168763779',
-                      '00852-61588111',
-                      '00852-31158669',
-                    ].map((phone) => (
+                    {['0086-13168763779', '00852-61588111'].map((phone) => (
                       <div key={phone} className="flex items-center gap-3">
                         <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
                           <svg
@@ -666,6 +662,26 @@ export default function Home() {
                         </a>
                       </div>
                     ))}
+                  </li>
+
+                  {/* 传真 */}
+                  <li className="flex items-center gap-3">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                      <svg
+                        className="w-4 h-4 text-primary"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"
+                        />
+                      </svg>
+                    </div>
+                    <span className="text-gray-600">传真：00852-31158669</span>
                   </li>
 
                   {/* 地址 */}
