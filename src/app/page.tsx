@@ -557,95 +557,41 @@ export default function Home() {
               </p>
             </div>
 
-            {/* 导航链接区 */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:w-3/4">
-              {/* 关于我们 */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold text-gray-900">
-                  关于我们
-                </h3>
-                <ul className="space-y-2">
-                  {['关于我们', '架构', '加入我们'].map((item) => (
-                    <li key={item}>
-                      <a
-                        href={`/zh-Hans/${
-                          item === '关于我们'
-                            ? 'about-us'
-                            : item === '架构'
-                            ? 'structure'
-                            : 'careers'
-                        }`}
-                        className="text-gray-600 hover:text-primary transition-colors duration-200"
-                      >
-                        {item}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* 相关资源 */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold text-gray-900">
-                  相关资源
-                </h3>
-                <ul className="space-y-2">
-                  {[
-                    {
-                      name: '最新动态',
-                      link: '/zh-Hans/latest-updates/speeches',
-                    },
-                    { name: '联络我们', link: '/zh-Hans/contact-us' },
-                  ].map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.link}
-                        className="text-gray-600 hover:text-primary transition-colors duration-200"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* 联系方式 */}
+              {/* 电话和传真 */}
               <div className="space-y-6">
                 <h3 className="text-lg font-semibold text-gray-900">
-                  与我们联系
+                  联系电话
                 </h3>
                 <ul className="space-y-4">
-                  {/* 联系电话 */}
-                  <li className="space-y-2">
-                    {['00852-61588111', '0086-18129986251'].map((phone) => (
-                      <div key={phone} className="flex items-center gap-3">
-                        <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                          <svg
-                            className="w-4 h-4 text-primary"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                            />
-                          </svg>
-                        </div>
-                        <a
-                          href={`tel:${phone}`}
-                          className="text-gray-600 hover:text-primary transition-colors duration-200"
+                  {['00852-61588111', '0086-18129986251'].map((phone) => (
+                    <div key={phone} className="flex items-center gap-3">
+                      <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                        <svg
+                          className="w-4 h-4 text-primary"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
                         >
-                          {phone}
-                        </a>
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                          />
+                        </svg>
                       </div>
-                    ))}
-                  </li>
+                      <a
+                        href={`tel:${phone}`}
+                        className="text-gray-600 hover:text-primary transition-colors duration-200"
+                      >
+                        {phone}
+                      </a>
+                    </div>
+                  ))}
 
                   {/* 传真 */}
-                  <li className="flex items-center gap-3">
+                  <div className="flex items-center gap-3">
                     <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
                       <svg
                         className="w-4 h-4 text-primary"
@@ -662,77 +608,95 @@ export default function Home() {
                       </svg>
                     </div>
                     <span className="text-gray-600">传真：00852-31158669</span>
-                  </li>
+                  </div>
+                </ul>
+              </div>
 
-                  {/* 地址 */}
-                  <li className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mt-1">
-                      <svg
-                        className="w-4 h-4 text-primary"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                        />
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                      </svg>
-                    </div>
-                    <span className="text-gray-600 text-sm leading-relaxed">
-                      Rm D07,8/F, Kai Tak Fty Building, No.99king Fuk Street,
-                      Sanpokong, Kowloon, Hong Kong.
-                    </span>
-                  </li>
+              {/* 地址 */}
+              <div className="space-y-6">
+                <h3 className="text-lg font-semibold text-gray-900">
+                  办公地址
+                </h3>
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mt-1">
+                    <svg
+                      className="w-4 h-4 text-primary"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </div>
+                  <span className="text-gray-600 text-sm leading-relaxed">
+                    Rm D07,8/F, Kai Tak Fty Building, No.99king Fuk Street,
+                    Sanpokong, Kowloon, Hong Kong.
+                  </span>
+                </div>
+              </div>
 
-                  {/* 网站和邮箱 */}
-                  <li className="flex items-center gap-6">
+              {/* 网站和邮箱 */}
+              <div className="space-y-6">
+                <h3 className="text-lg font-semibold text-gray-900">
+                  在线联系
+                </h3>
+                <ul className="space-y-4">
+                  <li>
                     <a
                       href="http://www.chneu.hk"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors duration-200"
                     >
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                        />
-                      </svg>
+                      <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                        <svg
+                          className="w-4 h-4 text-primary"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                          />
+                        </svg>
+                      </div>
                       www.chneu.hk
                     </a>
+                  </li>
+                  <li>
                     <a
                       href="mailto:info@chneu.hk"
                       className="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors duration-200"
                     >
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                        />
-                      </svg>
+                      <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                        <svg
+                          className="w-4 h-4 text-primary"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                          />
+                        </svg>
+                      </div>
                       info@chneu.hk
                     </a>
                   </li>
