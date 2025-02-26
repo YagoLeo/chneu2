@@ -615,29 +615,9 @@ export default function Home() {
                   与我们联系
                 </h3>
                 <ul className="space-y-4">
-                  {/* 主要联系人 */}
-                  <li className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                      <svg
-                        className="w-4 h-4 text-primary"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                        />
-                      </svg>
-                    </div>
-                    <span className="text-gray-600">Chairman: Donald Wu</span>
-                  </li>
-
                   {/* 联系电话 */}
                   <li className="space-y-2">
-                    {['0086-13168763779', '00852-61588111'].map((phone) => (
+                    {['00852-61588111', '0086-18129986251'].map((phone) => (
                       <div key={phone} className="flex items-center gap-3">
                         <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
                           <svg
@@ -737,7 +717,7 @@ export default function Home() {
                       www.chneu.hk
                     </a>
                     <a
-                      href="mailto:chairman@chneu.hk"
+                      href="mailto:info@chneu.hk"
                       className="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors duration-200"
                     >
                       <svg
@@ -753,7 +733,7 @@ export default function Home() {
                           d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                         />
                       </svg>
-                      chairman@chneu.hk
+                      info@chneu.hk
                     </a>
                   </li>
                 </ul>
