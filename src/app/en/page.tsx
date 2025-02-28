@@ -55,17 +55,17 @@ export default function Home() {
                 </div>
               </div>
               <nav className="hidden md:flex space-x-6 capitalize font-semibold">
-                <a className="" href="/zh-Hans/about-us">
-                  关于我们
+                <a className="" href="#about-us">
+                  About Us
                 </a>
-                <a className="" href="/zh-Hans/structure">
-                  架构
+                <a className="" href="#major-areas">
+                  Major Areas
                 </a>
-                <a className="" href="/zh-Hans/latest-updates">
-                  最新动态
+                <a className="" href="#news">
+                  News
                 </a>
-                <a className="" href="/zh-Hans/careers">
-                  加入我们
+                <a className="" href="#join-us">
+                  Join Us
                 </a>
               </nav>
             </div>
@@ -108,7 +108,7 @@ export default function Home() {
                 style={{
                   color: 'transparent',
                   width: '500px',
-                  marginTop: '100px',
+                  marginTop: '20px',
                 }}
               ></img>
             </div>
@@ -118,13 +118,13 @@ export default function Home() {
           <div className="vk-container-sm grid grid-cols-3 gap-x-3 group">
             <a
               className="bg-white flex items-stretch hover:scale-105 group-hover:hover:opacity-100   transition-all group-hover:opacity-75"
-              href="/zh-Hans/about-us"
+              href="#about-us"
             >
               <div className="w-1 h-full bg-primary"></div>
               <div className="flex flex-grow flex-col py-6 px-5">
-                <div className="text-primary uppercase "> 我们的故事</div>
+                <div className="text-primary uppercase "> Our Story</div>
                 <h5 className="font-semibold text-2xl mt-1 capitalize">
-                  关于我们
+                  About Us
                 </h5>
               </div>
               <div className="items-center justify-center flex px-6">
@@ -148,14 +148,13 @@ export default function Home() {
             </a>
             <a
               className="bg-white flex items-stretch hover:scale-105 group-hover:hover:opacity-100   transition-all group-hover:opacity-75"
-              href="/zh-Hans/structure/board-of-directors"
+              href="#major-areas"
             >
               <div className="w-1 h-full bg-primary"></div>
               <div className="flex flex-grow flex-col py-6 px-5">
-                <div className="text-primary uppercase ">我们的组织</div>
+                <div className="text-primary uppercase ">Major Areas</div>
                 <h5 className="font-semibold text-2xl mt-1 capitalize">
-                  {' '}
-                  管治与架构
+                  Core advantage
                 </h5>
               </div>
               <div className="items-center justify-center flex px-6">
@@ -179,14 +178,12 @@ export default function Home() {
             </a>
             <a
               className="bg-white flex items-stretch hover:scale-105 group-hover:hover:opacity-100   transition-all group-hover:opacity-75"
-              href="/zh-Hans/latest-updates/speeches"
+              href="#news"
             >
               <div className="w-1 h-full bg-primary"></div>
               <div className="flex flex-grow flex-col py-6 px-5">
-                <div className="text-primary uppercase ">我们的动向</div>
-                <h5 className="font-semibold text-2xl mt-1 capitalize">
-                  最新动态
-                </h5>
+                <div className="text-primary uppercase ">Our Trend</div>
+                <h5 className="font-semibold text-2xl mt-1 capitalize">News</h5>
               </div>
               <div className="items-center justify-center flex px-6">
                 <div className="text-lg w-8 h-8 rounded-full border border-primary text-primary flex items-center justify-center">
@@ -224,7 +221,10 @@ export default function Home() {
           data-px-source="true"
         />
       </section>
-      <section className="relative md:overflow-hidden overflow-visible md:py-24  bg-secondary md:bg-neutral-50">
+      <section
+        className="relative md:overflow-hidden overflow-visible md:py-24  bg-secondary md:bg-neutral-50"
+        id="about-us"
+      >
         <img
           alt="left-misc"
           loading="lazy"
@@ -254,21 +254,35 @@ export default function Home() {
               data-px-source="true"
             />
             <div className=" -top-4 md:top-0 bottom-0 m-auto h-auto  md:mt-24 md:my-24 md:p-24 p-16 bg-primary-50 md:w-[85%] mr-0 relative z-20">
-              <h2 className="text-5xl font-semibold mb-3">我们的故事</h2>
+              <h2 className="text-5xl font-semibold mb-3">Our Story</h2>
               <div className="h-px bg-primary w-12 my-4"></div>
               <div className="text-lg leading-relaxed">
                 <p style={{ marginBottom: '10px' }}>
-                  香港中欧投资管理有限公司（以下简称&ldquo;中欧投资&rdquo;）2013年在香港注册，公司注册号1971883，总部位于国际金融中心香港，注册资本1亿港币。公司秉承&ldquo;专业、创新、责任&rdquo;的核心价值观，专注于全球资产配置、跨境投资管理与战略资源整合，致力于为合作伙伴提供高效、稳健的资本增值服务，同时推动新兴市场经济的可持续发展。
+                  HongKong CHNEU Investment Management CO., Limited (hereinafter
+                  referred to as &ldquo;CHNEU&rdquo;) was registered in Hong
+                  Kong in 2013, company registration number 1971883,
+                  headquartered in Hong Kong, an international financial center,
+                  with a registered capital of 100 million Hong Kong dollars.
+                  The company&apos;s main businesses include fund management and
+                  investment and trade in minerals, industry, agriculture,
+                  fisheries, commerce, real estate, intelligent
+                  equipment.Adhering to the core values of
+                  &ldquo;professionalism, innovation and responsibility&rdquo;,
+                  the company focuses on global asset allocation, cross-border
+                  investment management and strategic resource integration, and
+                  is committed to providing partners with efficient and stable
+                  capital appreciation services, while promoting the sustainable
+                  development of emerging market economies.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="bg-neutral-100">
+      <section className="bg-neutral-100" id="major-areas">
         <div className="vk-container py-36">
           <header className="space-y-2 mb-24">
-            <h3 className="uppercase font-bold text-5xl ">重点领域</h3>
+            <h3 className="uppercase font-bold text-5xl ">Major Areas</h3>
           </header>
           <div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6"
@@ -278,33 +292,70 @@ export default function Home() {
               className="bg-white px-12 py-12 text-lg"
               style={{ opacity: 1 }}
             >
-              <h6 className="text-2xl font-semibold mb-4">核心优势</h6>
+              <h6 className="text-2xl font-semibold mb-4">Core advantage</h6>
               <p className="text-neutral-500 leading-loose">
-                中欧投资的核心竞争力源自其卓越的团队背景与深厚的资源网络。公司法人代表曾先后担任三家中国上市企业高管，在战略决策、资本运作及跨国资源整合领域拥有逾二十年的实战经验。核心团队成员均来自国际知名金融机构，曾成功管理超万亿规模基金，并在新能源、工业、矿业、渔业、农业、基建、军工科技等多元化领域积累丰富投资经验。依托创始团队在中国政商界构建的长期战略合作关系，公司具备独特的资源协调能力，可高效链接政策支持、产业资本与跨境合作机遇。
+                The core competitiveness of CHNEU Investment comes from its
+                excellent team background and deep resource network. The legal
+                representative of the company has served as a senior executive
+                of three Chinese listed enterprises, and has more than two
+                decades of practical experience in the field of strategic
+                decision-making, capital operation and multinational resource
+                integration. The core team members are from internationally
+                renowned financial institutions, and have successfully managed
+                over one trillion funds, and accumulated rich investment
+                experience in diversified fields such as new energy, industry,
+                mining, fishery, agriculture, infrastructure, military science
+                and technology. Relying on the long-term strategic partnership
+                built by the founding team in China&apos;s political and
+                business communities, the company has a unique resource
+                coordination ability to efficiently link policy support,
+                industrial capital and cross-border cooperation opportunities.
               </p>
             </div>
             <div
               className="bg-white px-12 py-12 text-lg"
               style={{ opacity: 1 }}
             >
-              <h6 className="text-2xl font-semibold mb-4">聚焦新兴市场发展</h6>
+              <h6 className="text-2xl font-semibold mb-4">
+                Focus on emerging markets
+              </h6>
               <p className="text-neutral-500 leading-loose">
-                中欧投资积极响应&ldquo;一带一路&rdquo;倡议，将非洲及中东地区作为战略布局重点。凭借对中国资本出海需求的深刻理解及对新兴市场的前瞻研判，通过搭建中非政商对话平台、引入中国产业投资、促进技术转移与产业孵化等方式，助力非洲经济重建。
+                In response to the Belt and Road Initiative, CHNEU Investment
+                have made Africa and the Middle East a strategic priority. With
+                a deep understanding of Chinese capital&apos;s overseas needs
+                and a forward-looking study and judgment of emerging markets, we
+                will help Africa&apos;s economic reconstruction by building a
+                platform for China-Africa political and business dialogue,
+                introducing Chinese industrial investment, and promoting
+                technology transfer and industrial incubation.
               </p>
             </div>
             <div
               className="bg-white px-12 py-12 text-lg"
               style={{ opacity: 1 }}
             >
-              <h6 className="text-2xl font-semibold mb-4">使命与愿景</h6>
+              <h6 className="text-2xl font-semibold mb-4">
+                Mission and Vision
+              </h6>
               <p className="text-neutral-500 leading-loose">
-                作为亚非资本互联的桥梁，中欧投资始终践行&ldquo;资本向善&rdquo;的理念。未来，公司将持续深化全球合作伙伴网络，通过专业投资管理能力与跨区域资源整合优势，为投资者创造长期价值，同时推动新兴市场产业链升级，实现经济效益与社会价值的共赢发展。
+                As a bridge of Asian-African capital connectivity, CHNEU
+                Investment has always practiced the concept of &ldquo;capital
+                for good&ldquo;. In the future, the company will continue to
+                deepen its global partner network, create long-term value for
+                investors through professional investment management
+                capabilities and cross-regional resource integration advantages,
+                and promote the upgrading of the industrial chain in emerging
+                markets to achieve win-win development of economic benefits and
+                social values.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden py-24 bg-white select-none">
+      <section
+        className="relative overflow-hidden py-24 bg-white select-none"
+        id="news"
+      >
         <img
           alt="left-misc"
           loading="lazy"
@@ -369,13 +420,16 @@ export default function Home() {
                 />
               </div>
               <p className=" md:w-2/3 text-xl font-semibold mb-2">
-                香港中欧投资管理有限公司就「新资本投资者入境计划」下的「投资组合」委任基金经理及资产管理行政及相关服务的服务提供机构（2024年12月）
+                CHNEU appoints a fund manager and a service provider of asset
+                management administration and related services for the
+                &rdquo;Investment Portfolio&rdquo; under the &ldquo;New Capital
+                Investor Entrant Scheme&rdquo; (December 2024)
               </p>
               <a
                 className="bg-primary text-white font-semibold text-lg px-4 py-3 my-6"
                 href="/zh-Hans/latest-updates/announces-the-appointment-of-fund-managers-and-service-provider-dec-2024-sc"
               >
-                详细资料
+                Read More
               </a>
             </div>
             <button
@@ -463,16 +517,16 @@ export default function Home() {
             </div>
             <div className="w-full capitalize lg:w-auto grid grid-cols-2 lg:grid-cols-3 flex-grow lg:ml-48 footer-menu gap-y-14">
               <div>
-                <h3>关于我们</h3>
+                <h3>About Us</h3>
                 <ul>
                   <li>
-                    <a href="/zh-Hans/about-us">关于我们</a>
+                    <a href="/zh-Hans/about-us">About Us</a>
                   </li>
                   <li>
                     <a href="/zh-Hans/structure">架构</a>
                   </li>
                   <li>
-                    <a href="/zh-Hans/careers">加入我们</a>
+                    <a href="/zh-Hans/careers">Join Us</a>
                   </li>
                 </ul>
               </div>
@@ -480,7 +534,7 @@ export default function Home() {
                 <h3>相关资源</h3>
                 <ul>
                   <li>
-                    <a href="/zh-Hans/latest-updates/speeches">最新动态</a>
+                    <a href="/zh-Hans/latest-updates/speeches">News</a>
                   </li>
                   <li>
                     <a href="/zh-Hans/contact-us">联络我们</a>
@@ -538,7 +592,10 @@ export default function Home() {
           </div>
         </div>
       </footer> */}
-      <footer className="bg-neutral-50 border-t border-neutral-200">
+      <footer
+        className="bg-neutral-50 border-t border-neutral-200"
+        id="join-us"
+      >
         <div className="vk-container py-16">
           {/* 主要内容区 */}
           <div className="flex flex-col lg:flex-row gap-12">
@@ -553,70 +610,45 @@ export default function Home() {
                 src="logo.png"
               />
               <p className="text-gray-600 text-sm leading-relaxed">
-                香港中欧投资管理有限公司致力于为合作伙伴提供高效、稳健的资本增值服务，同时推动新兴市场经济的可持续发展。
+                CHNEU is committed to providing partners with efficient and
+                stable capital appreciation services while promoting the
+                sustainable development of emerging market economies.
               </p>
             </div>
 
-            {/* 导航链接区 */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:w-3/4">
-              {/* 关于我们 */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold text-gray-900">
-                  关于我们
-                </h3>
-                <ul className="space-y-2">
-                  {['关于我们', '架构', '加入我们'].map((item) => (
-                    <li key={item}>
-                      <a
-                        href={`/zh-Hans/${
-                          item === '关于我们'
-                            ? 'about-us'
-                            : item === '架构'
-                            ? 'structure'
-                            : 'careers'
-                        }`}
-                        className="text-gray-600 hover:text-primary transition-colors duration-200"
-                      >
-                        {item}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* 相关资源 */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold text-gray-900">
-                  相关资源
-                </h3>
-                <ul className="space-y-2">
-                  {[
-                    {
-                      name: '最新动态',
-                      link: '/zh-Hans/latest-updates/speeches',
-                    },
-                    { name: '联络我们', link: '/zh-Hans/contact-us' },
-                  ].map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.link}
-                        className="text-gray-600 hover:text-primary transition-colors duration-200"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* 联系方式 */}
+              {/* 电话和传真 */}
               <div className="space-y-6">
-                <h3 className="text-lg font-semibold text-gray-900">
-                  与我们联系
-                </h3>
+                <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
                 <ul className="space-y-4">
-                  {/* 主要联系人 */}
-                  <li className="flex items-center gap-3">
+                  {['00852-61588111', '0086-18129986251'].map((phone) => (
+                    <div key={phone} className="flex items-center gap-3">
+                      <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                        <svg
+                          className="w-4 h-4 text-primary"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                          />
+                        </svg>
+                      </div>
+                      <a
+                        href={`tel:${phone}`}
+                        className="text-gray-600 hover:text-primary transition-colors duration-200"
+                      >
+                        {phone}
+                      </a>
+                    </div>
+                  ))}
+
+                  {/* 传真 */}
+                  <div className="flex items-center gap-3">
                     <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
                       <svg
                         className="w-4 h-4 text-primary"
@@ -628,116 +660,99 @@ export default function Home() {
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeWidth={2}
-                          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                          d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"
                         />
                       </svg>
                     </div>
-                    <span className="text-gray-600">Chairman: Donald Wu</span>
-                  </li>
+                    <span className="text-gray-600">Fax：00852-31158669</span>
+                  </div>
+                </ul>
+              </div>
 
-                  {/* 联系电话 */}
-                  <li className="space-y-2">
-                    {[
-                      '0086-13168763779',
-                      '00852-61588111',
-                      '00852-31158669',
-                    ].map((phone) => (
-                      <div key={phone} className="flex items-center gap-3">
-                        <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                          <svg
-                            className="w-4 h-4 text-primary"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                            />
-                          </svg>
-                        </div>
-                        <a
-                          href={`tel:${phone}`}
-                          className="text-gray-600 hover:text-primary transition-colors duration-200"
-                        >
-                          {phone}
-                        </a>
-                      </div>
-                    ))}
-                  </li>
+              {/* 地址 */}
+              <div className="space-y-6">
+                <h3 className="text-lg font-semibold text-gray-900">Address</h3>
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mt-1">
+                    <svg
+                      className="w-4 h-4 text-primary"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </div>
+                  <span className="text-gray-600 text-sm leading-relaxed">
+                    Rm D07,8/F, Kai Tak Fty Building, No.99king Fuk Street,
+                    Sanpokong, Kowloon, Hong Kong.
+                  </span>
+                </div>
+              </div>
 
-                  {/* 地址 */}
-                  <li className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mt-1">
-                      <svg
-                        className="w-4 h-4 text-primary"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                        />
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                      </svg>
-                    </div>
-                    <span className="text-gray-600 text-sm leading-relaxed">
-                      Rm D07,8/F, Kai Tak Fty Building, No.99king Fuk Street,
-                      Sanpokong, Kowloon, Hong Kong.
-                    </span>
-                  </li>
-
-                  {/* 网站和邮箱 */}
-                  <li className="flex items-center gap-6">
+              {/* 网站和邮箱 */}
+              <div className="space-y-6">
+                <h3 className="text-lg font-semibold text-gray-900">
+                  Website & Email
+                </h3>
+                <ul className="space-y-4">
+                  <li>
                     <a
                       href="http://www.chneu.hk"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors duration-200"
                     >
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                        />
-                      </svg>
+                      <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                        <svg
+                          className="w-4 h-4 text-primary"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                          />
+                        </svg>
+                      </div>
                       www.chneu.hk
                     </a>
+                  </li>
+                  <li>
                     <a
-                      href="mailto:chairman@chneu.hk"
+                      href="mailto:info@chneu.hk"
                       className="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors duration-200"
                     >
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                        />
-                      </svg>
-                      chairman@chneu.hk
+                      <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                        <svg
+                          className="w-4 h-4 text-primary"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                          />
+                        </svg>
+                      </div>
+                      info@chneu.hk
                     </a>
                   </li>
                 </ul>
@@ -749,9 +764,9 @@ export default function Home() {
           <div className="border-t border-neutral-200 mt-12 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-sm text-gray-500">
-                © 2025 香港中欧投资管理有限公司 版权所有。
+                © 2025 CHNEU. All rights Reserved.
               </p>
-              <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
+              {/* <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
                 {[
                   {
                     name: 'Privacy & Cookies Notice',
@@ -771,7 +786,7 @@ export default function Home() {
                     {item.name}
                   </a>
                 ))}
-              </nav>
+              </nav> */}
             </div>
           </div>
         </div>

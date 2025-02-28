@@ -55,16 +55,16 @@ export default function Home() {
                 </div>
               </div>
               <nav className="hidden md:flex space-x-6 capitalize font-semibold">
-                <a className="" href="/zh-Hans/about-us">
+                <a className="" href="#about-us">
                   关于我们
                 </a>
-                <a className="" href="/zh-Hans/structure">
-                  架构
+                <a className="" href="#major-areas">
+                  重点领域
                 </a>
-                <a className="" href="/zh-Hans/latest-updates">
+                <a className="" href="#news">
                   最新动态
                 </a>
-                <a className="" href="/zh-Hans/careers">
+                <a className="" href="#join-us">
                   加入我们
                 </a>
               </nav>
@@ -118,7 +118,7 @@ export default function Home() {
           <div className="vk-container-sm grid grid-cols-3 gap-x-3 group">
             <a
               className="bg-white flex items-stretch hover:scale-105 group-hover:hover:opacity-100   transition-all group-hover:opacity-75"
-              href="/zh-Hans/about-us"
+              href="#about-us"
             >
               <div className="w-1 h-full bg-primary"></div>
               <div className="flex flex-grow flex-col py-6 px-5">
@@ -148,11 +148,11 @@ export default function Home() {
             </a>
             <a
               className="bg-white flex items-stretch hover:scale-105 group-hover:hover:opacity-100   transition-all group-hover:opacity-75"
-              href="/zh-Hans/structure/board-of-directors"
+              href="#major-areas"
             >
               <div className="w-1 h-full bg-primary"></div>
               <div className="flex flex-grow flex-col py-6 px-5">
-                <div className="text-primary uppercase ">我们的组织</div>
+                <div className="text-primary uppercase ">重点领域</div>
                 <h5 className="font-semibold text-2xl mt-1 capitalize">
                   {' '}
                   管治与架构
@@ -179,7 +179,7 @@ export default function Home() {
             </a>
             <a
               className="bg-white flex items-stretch hover:scale-105 group-hover:hover:opacity-100   transition-all group-hover:opacity-75"
-              href="/zh-Hans/latest-updates/speeches"
+              href="#news"
             >
               <div className="w-1 h-full bg-primary"></div>
               <div className="flex flex-grow flex-col py-6 px-5">
@@ -224,7 +224,10 @@ export default function Home() {
           data-px-source="true"
         />
       </section>
-      <section className="relative md:overflow-hidden overflow-visible md:py-24  bg-secondary md:bg-neutral-50">
+      <section
+        className="relative md:overflow-hidden overflow-visible md:py-24  bg-secondary md:bg-neutral-50"
+        id="about-us"
+      >
         <img
           alt="left-misc"
           loading="lazy"
@@ -265,7 +268,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-neutral-100">
+      <section className="bg-neutral-100" id="major-areas">
         <div className="vk-container py-36">
           <header className="space-y-2 mb-24">
             <h3 className="uppercase font-bold text-5xl ">重点领域</h3>
@@ -304,7 +307,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative overflow-hidden py-24 bg-white select-none">
+      <section
+        className="relative overflow-hidden py-24 bg-white select-none"
+        id="news"
+      >
         <img
           alt="left-misc"
           loading="lazy"
@@ -538,7 +544,10 @@ export default function Home() {
           </div>
         </div>
       </footer> */}
-      <footer className="bg-neutral-50 border-t border-neutral-200">
+      <footer
+        className="bg-neutral-50 border-t border-neutral-200"
+        id="join-us"
+      >
         <div className="vk-container py-16">
           {/* 主要内容区 */}
           <div className="flex flex-col lg:flex-row gap-12">
@@ -711,7 +720,7 @@ export default function Home() {
               <p className="text-sm text-gray-500">
                 © 2025 香港中欧投资管理有限公司 版权所有。
               </p>
-              <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
+              {/* <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
                 {[
                   {
                     name: 'Privacy & Cookies Notice',
@@ -731,7 +740,7 @@ export default function Home() {
                     {item.name}
                   </a>
                 ))}
-              </nav>
+              </nav> */}
             </div>
           </div>
         </div>
