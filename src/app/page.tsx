@@ -61,9 +61,6 @@ export default function Home() {
                 <a className="" href="#major-areas">
                   重点领域
                 </a>
-                <a className="" href="#news">
-                  最新动态
-                </a>
                 <a className="" href="#join-us">
                   加入我们
                 </a>
@@ -115,7 +112,7 @@ export default function Home() {
           </div>
         </div>
         <nav className="z-10 bottom-0 pb-12 w-full hidden md:block">
-          <div className="vk-container-sm grid grid-cols-3 gap-x-3 group">
+          <div className="vk-container-sm grid grid-cols-2 gap-x-10 group">
             <a
               className="bg-white flex items-stretch hover:scale-105 group-hover:hover:opacity-100   transition-all group-hover:opacity-75"
               href="#about-us"
@@ -156,36 +153,6 @@ export default function Home() {
                 <h5 className="font-semibold text-2xl mt-1 capitalize">
                   {' '}
                   管治与架构
-                </h5>
-              </div>
-              <div className="items-center justify-center flex px-6">
-                <div className="text-lg w-8 h-8 rounded-full border border-primary text-primary flex items-center justify-center">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 16 16"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </a>
-            <a
-              className="bg-white flex items-stretch hover:scale-105 group-hover:hover:opacity-100   transition-all group-hover:opacity-75"
-              href="#news"
-            >
-              <div className="w-1 h-full bg-primary"></div>
-              <div className="flex flex-grow flex-col py-6 px-5">
-                <div className="text-primary uppercase ">我们的动向</div>
-                <h5 className="font-semibold text-2xl mt-1 capitalize">
-                  最新动态
                 </h5>
               </div>
               <div className="items-center justify-center flex px-6">
@@ -303,145 +270,6 @@ export default function Home() {
               <p className="text-neutral-500 leading-loose">
                 作为亚非资本互联的桥梁，中欧投资始终践行&ldquo;资本向善&rdquo;的理念。未来，公司将持续深化全球合作伙伴网络，通过专业投资管理能力与跨区域资源整合优势，为投资者创造长期价值，同时推动新兴市场产业链升级，实现经济效益与社会价值的共赢发展。
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        className="relative overflow-hidden py-24 bg-white select-none"
-        id="news"
-      >
-        <img
-          alt="left-misc"
-          loading="lazy"
-          width="404"
-          height="432"
-          decoding="async"
-          data-nimg="1"
-          className="absolute left-[-20%] bottom-[-20%] h-[calc(16rem+10vw)] w-auto"
-          src="/left-misc.svg"
-          style={{ color: 'transparent' }}
-          data-px-source="true"
-        />
-        <img
-          alt="right-misc"
-          loading="lazy"
-          width="401"
-          height="432"
-          decoding="async"
-          data-nimg="1"
-          className="absolute right-[-3%] bottom-[-15%] h-[calc(16rem+10vw)] w-auto"
-          src="/right-misc.svg"
-          style={{ color: 'transparent' }}
-          data-px-source="true"
-        />
-        <div className="vk-container z-10 relative">
-          <div className="flex flex-col md:flex-row items-center border border-primary py-12 px-12 bg-white">
-            <button
-              className="hidden md:flex border rounded-full w-16 h-16 items-center flex-shrink-0 justify-center text-primary border-primary text-xl active:bg-neutral-50"
-              type="button"
-            >
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 16 16"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
-                ></path>
-              </svg>
-            </button>
-            <div
-              className="text-center flex flex-col items-center justify-center py-12 flex-grow"
-              style={{ opacity: 1, transform: 'none' }}
-            >
-              <div className="px-14">
-                <img
-                  alt=""
-                  loading="lazy"
-                  width="531"
-                  height="61"
-                  decoding="async"
-                  data-nimg="1"
-                  className="w-2/3 h-auto object-cover mx-auto py-24 "
-                  src="logo.png"
-                  data-px-source="true"
-                  style={{ color: 'transparent' }}
-                />
-              </div>
-              <p className=" md:w-2/3 text-xl font-semibold mb-2">
-                香港中欧投资管理有限公司就「新资本投资者入境计划」下的「投资组合」委任基金经理及资产管理行政及相关服务的服务提供机构（2024年12月）
-              </p>
-              <a
-                className="bg-primary text-white font-semibold text-lg px-4 py-3 my-6"
-                href="/zh-Hans/latest-updates/announces-the-appointment-of-fund-managers-and-service-provider-dec-2024-sc"
-              >
-                详细资料
-              </a>
-            </div>
-            <button
-              className="border rounded-full w-16 h-16 hidden md:flex items-center flex-shrink-0 justify-center text-primary border-primary text-xl active:bg-neutral-50"
-              type="button"
-            >
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 16 16"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                ></path>
-              </svg>
-            </button>
-            <div className="flex md:hidden gap-x-6">
-              <button
-                className="flex border rounded-full w-16 h-16 items-center flex-shrink-0 justify-center text-primary border-primary text-xl active:bg-neutral-50"
-                type="button"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 16 16"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
-                  ></path>
-                </svg>
-              </button>
-              <button
-                className="border rounded-full w-16 h-16 flex items-center flex-shrink-0 justify-center text-primary border-primary text-xl active:bg-neutral-50"
-                type="button"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 16 16"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                  ></path>
-                </svg>
-              </button>
             </div>
           </div>
         </div>

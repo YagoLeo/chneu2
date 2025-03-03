@@ -61,9 +61,6 @@ export default function Home() {
                 <a className="" href="#major-areas">
                   Major Areas
                 </a>
-                <a className="" href="#news">
-                  News
-                </a>
                 <a className="" href="#join-us">
                   Join Us
                 </a>
@@ -115,7 +112,7 @@ export default function Home() {
           </div>
         </div>
         <nav className="z-10 bottom-0 pb-12 w-full hidden md:block">
-          <div className="vk-container-sm grid grid-cols-3 gap-x-3 group">
+          <div className="vk-container-sm grid grid-cols-2 gap-x-10 group">
             <a
               className="bg-white flex items-stretch hover:scale-105 group-hover:hover:opacity-100   transition-all group-hover:opacity-75"
               href="#about-us"
@@ -156,34 +153,6 @@ export default function Home() {
                 <h5 className="font-semibold text-2xl mt-1 capitalize">
                   Core advantage
                 </h5>
-              </div>
-              <div className="items-center justify-center flex px-6">
-                <div className="text-lg w-8 h-8 rounded-full border border-primary text-primary flex items-center justify-center">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    stroke-width="0"
-                    viewBox="0 0 16 16"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </a>
-            <a
-              className="bg-white flex items-stretch hover:scale-105 group-hover:hover:opacity-100   transition-all group-hover:opacity-75"
-              href="#news"
-            >
-              <div className="w-1 h-full bg-primary"></div>
-              <div className="flex flex-grow flex-col py-6 px-5">
-                <div className="text-primary uppercase ">Our Trend</div>
-                <h5 className="font-semibold text-2xl mt-1 capitalize">News</h5>
               </div>
               <div className="items-center justify-center flex px-6">
                 <div className="text-lg w-8 h-8 rounded-full border border-primary text-primary flex items-center justify-center">
@@ -352,148 +321,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section
-        className="relative overflow-hidden py-24 bg-white select-none"
-        id="news"
-      >
-        <img
-          alt="left-misc"
-          loading="lazy"
-          width="404"
-          height="432"
-          decoding="async"
-          data-nimg="1"
-          className="absolute left-[-20%] bottom-[-20%] h-[calc(16rem+10vw)] w-auto"
-          src="/left-misc.svg"
-          style={{ color: 'transparent' }}
-          data-px-source="true"
-        />
-        <img
-          alt="right-misc"
-          loading="lazy"
-          width="401"
-          height="432"
-          decoding="async"
-          data-nimg="1"
-          className="absolute right-[-3%] bottom-[-15%] h-[calc(16rem+10vw)] w-auto"
-          src="/right-misc.svg"
-          style={{ color: 'transparent' }}
-          data-px-source="true"
-        />
-        <div className="vk-container z-10 relative">
-          <div className="flex flex-col md:flex-row items-center border border-primary py-12 px-12 bg-white">
-            <button
-              className="hidden md:flex border rounded-full w-16 h-16 items-center flex-shrink-0 justify-center text-primary border-primary text-xl active:bg-neutral-50"
-              type="button"
-            >
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 16 16"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
-                ></path>
-              </svg>
-            </button>
-            <div
-              className="text-center flex flex-col items-center justify-center py-12 flex-grow"
-              style={{ opacity: 1, transform: 'none' }}
-            >
-              <div className="px-14">
-                <img
-                  alt=""
-                  loading="lazy"
-                  width="531"
-                  height="61"
-                  decoding="async"
-                  data-nimg="1"
-                  className="w-2/3 h-auto object-cover mx-auto py-24 "
-                  src="logo.png"
-                  data-px-source="true"
-                  style={{ color: 'transparent' }}
-                />
-              </div>
-              <p className=" md:w-2/3 text-xl font-semibold mb-2">
-                CHNEU appoints a fund manager and a service provider of asset
-                management administration and related services for the
-                &rdquo;Investment Portfolio&rdquo; under the &ldquo;New Capital
-                Investor Entrant Scheme&rdquo; (December 2024)
-              </p>
-              <a
-                className="bg-primary text-white font-semibold text-lg px-4 py-3 my-6"
-                href="/zh-Hans/latest-updates/announces-the-appointment-of-fund-managers-and-service-provider-dec-2024-sc"
-              >
-                Read More
-              </a>
-            </div>
-            <button
-              className="border rounded-full w-16 h-16 hidden md:flex items-center flex-shrink-0 justify-center text-primary border-primary text-xl active:bg-neutral-50"
-              type="button"
-            >
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 16 16"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                ></path>
-              </svg>
-            </button>
-            <div className="flex md:hidden gap-x-6">
-              <button
-                className="flex border rounded-full w-16 h-16 items-center flex-shrink-0 justify-center text-primary border-primary text-xl active:bg-neutral-50"
-                type="button"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 16 16"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
-                  ></path>
-                </svg>
-              </button>
-              <button
-                className="border rounded-full w-16 h-16 flex items-center flex-shrink-0 justify-center text-primary border-primary text-xl active:bg-neutral-50"
-                type="button"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  viewBox="0 0 16 16"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+
       {/* <footer className="border-t border-neutral-200">
         <div className="vk-container py-12">
           <div className="flex items-start flex-col lg:flex-row">
