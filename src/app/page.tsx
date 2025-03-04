@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <section className="relative bg-[#eeead9] h-[40dvw] xl:h-[30dvw] overflow-hidden flex flex-col">
+      <section className="relative bg-[#eeead9] h-[60dvw] xl:h-[30dvw] overflow-hidden flex flex-col">
         <div className="relative z-10 vk-container flex-grow flex items-center justify-center w-full">
           <div
             className="flex-grow px-8 md:px-24 overflow-hidden"
@@ -90,7 +90,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <nav className="z-10 bottom-0 pb-12 w-full hidden md:block">
+        <nav className="z-10 bottom-0 py-12 w-full hidden md:block">
           <div className="vk-container-sm grid grid-cols-2 gap-x-10 group">
             <a
               className="bg-white flex items-stretch hover:scale-105 group-hover:hover:opacity-100   transition-all group-hover:opacity-75"
@@ -155,20 +155,6 @@ export default function Home() {
             </a>
           </div>
         </nav>
-        <img
-          alt="HKIC"
-          loading="lazy"
-          width="2048"
-          height="565"
-          decoding="async"
-          data-nimg="1"
-          className=" translate-y-[5vw] absolute left-0 bottom-0 opacity-50"
-          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhk-banner-bg-2.1c1cf059.png&amp;w=2048&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhk-banner-bg-2.1c1cf059.png&amp;w=3840&amp;q=75 2x"
-          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhk-banner-bg-2.1c1cf059.png&amp;w=3840&amp;q=75"
-          style={{ color: 'transparent' }}
-          data-px-src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhk-banner-bg-2.1c1cf059.png&amp;w=3840&amp;q=75"
-          data-px-source="true"
-        />
       </section>
       <section
         className="relative md:overflow-hidden overflow-visible md:py-24  bg-secondary md:bg-neutral-50"
@@ -186,7 +172,7 @@ export default function Home() {
           style={{ color: 'transparent' }}
           data-px-source="true"
         />
-        <div className="vk-container">
+        {/* <div className="vk-container">
           <div className="relative z-20 overflow-y-visible pb-12 md:pb-0 md:vk-container flex-grow md:flex items-center justify-end md:py-24">
             <img
               alt="hkic"
@@ -212,6 +198,21 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div> */}
+        <div className="vk-container px-4 md:px-0">
+          <div className="relative z-20 overflow-y-visible py-12 md:pb-0 md:vk-container flex-grow md:flex items-center justify-end md:py-24">
+            <div className="top-0 bottom-0 m-auto h-auto mt-8 md:mt-24 md:my-24 md:p-24 p-8 bg-primary-50 w-full md:w-[85%] mr-0 relative z-20">
+              <h2 className="text-3xl md:text-5xl font-semibold mb-3">
+                我们的故事
+              </h2>
+              <div className="h-px bg-primary w-12 my-4"></div>
+              <div className="text-base md:text-lg leading-relaxed">
+                <p style={{ marginBottom: '10px' }}>
+                  香港中欧投资管理有限公司（以下简称&ldquo;中欧投资&rdquo;）2013年在香港注册，公司注册号1971883，总部位于国际金融中心香港，注册资本1亿港币。公司主营业务包括基金管理及矿产、工业、农业、渔业、商业、房地产、智能装备投资和贸易。公司秉承&ldquo;专业、创新、责任&rdquo;的核心价值观，专注于全球资产配置、跨境投资管理与战略资源整合，致力于为合作伙伴提供高效、稳健的资本增值服务，同时推动新兴市场经济的可持续发展。
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section className="bg-neutral-100" id="major-areas">
@@ -224,7 +225,7 @@ export default function Home() {
             style={{ opacity: 1 }}
           >
             <div
-              className="bg-white px-12 py-12 text-lg"
+              className="bg-white px-12 pb-12 text-lg"
               style={{ opacity: 1 }}
             >
               <h6 className="text-2xl font-semibold mb-4">核心优势</h6>

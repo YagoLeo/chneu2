@@ -65,7 +65,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <section className="relative bg-[#eeead9] h-[40dvw] xl:h-[30dvw] overflow-hidden flex flex-col">
+      <section className="relative bg-[#eeead9] h-[60dvw] xl:h-[30dvw] overflow-hidden flex flex-col">
         <div className="relative z-10 vk-container flex-grow flex items-center justify-center w-full">
           <div
             className="flex-grow px-8 md:px-24 overflow-hidden"
@@ -153,20 +153,6 @@ export default function Home() {
             </a>
           </div>
         </nav>
-        <img
-          alt="HKIC"
-          loading="lazy"
-          width="2048"
-          height="565"
-          decoding="async"
-          data-nimg="1"
-          className=" translate-y-[5vw] absolute left-0 bottom-0 opacity-50"
-          srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhk-banner-bg-2.1c1cf059.png&amp;w=2048&amp;q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhk-banner-bg-2.1c1cf059.png&amp;w=3840&amp;q=75 2x"
-          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhk-banner-bg-2.1c1cf059.png&amp;w=3840&amp;q=75"
-          style={{ color: 'transparent' }}
-          data-px-src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhk-banner-bg-2.1c1cf059.png&amp;w=3840&amp;q=75"
-          data-px-source="true"
-        />
       </section>
       <section
         className="relative md:overflow-hidden overflow-visible md:py-24  bg-secondary md:bg-neutral-50"
@@ -185,21 +171,7 @@ export default function Home() {
           data-px-source="true"
         />
         <div className="vk-container">
-          <div className="relative z-20 overflow-y-visible pb-12 md:pb-0 md:vk-container flex-grow md:flex items-center justify-end md:py-24">
-            <img
-              alt="hkic"
-              loading="lazy"
-              width="2322"
-              height="1524"
-              decoding="async"
-              data-nimg="1"
-              className="md:w-[85%] absolute left-0 hidden md:block"
-              srcSet="https://www.hkic.org.hk/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fout-mission.0f2d2080.png&w=3840&q=75"
-              src="https://www.hkic.org.hk/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fout-mission.0f2d2080.png&w=3840&q=75"
-              style={{ color: 'transparent', width: '90vw' }}
-              data-px-src="https://www.hkic.org.hk/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fout-mission.0f2d2080.png&w=3840&q=75"
-              data-px-source="true"
-            />
+          <div className="relative z-20 overflow-y-visible py-12 md:pb-0 md:vk-container flex-grow md:flex items-center justify-end md:py-24">
             <div className=" -top-4 md:top-0 bottom-0 m-auto h-auto  md:mt-24 md:my-24 md:p-24 p-16 bg-primary-50 md:w-[85%] mr-0 relative z-20">
               <h2 className="text-5xl font-semibold mb-3">Our Story</h2>
               <div className="h-px bg-primary w-12 my-4"></div>
