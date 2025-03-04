@@ -1,4 +1,8 @@
 import Link from 'next/link';
+import {
+  MobileLanguageSwitcher,
+  DesktopLanguageSwitcher,
+} from '@/components/LanguageSwitcher';
 
 export default function Home() {
   return (
@@ -36,23 +40,10 @@ export default function Home() {
                 data-px-source="true"
               />
             </Link>
+
             <div className="ml-auto hidden md:flex flex-col items-end gap-y-3">
               <div className="text-neutral-600 text-sm font-light flex items-center">
-                {/* <div className="flex items-center gap-x-4">
-                  <a href="/zh-Hans/contact-us">联络我们</a>
-                </div>
-                <span className="text-neutral-300 px-4">|</span> */}
-                <div className="flex items-center gap-x-3">
-                  {/* <a hrefLang="zh-Hant-HK" className="false" href="/zh-Hant-HK">
-                    繁
-                  </a> */}
-                  <Link className="font-medium" href="/">
-                    简
-                  </Link>
-                  <a hrefLang="en" className="false" href="/en">
-                    EN
-                  </a>
-                </div>
+                <DesktopLanguageSwitcher />
               </div>
               <nav className="hidden md:flex space-x-6 capitalize font-semibold">
                 <a className="" href="#about-us">
@@ -66,24 +57,12 @@ export default function Home() {
                 </a>
               </nav>
             </div>
-            <button className="md:hidden px-6">
-              <svg
-                stroke="currentColor"
-                fill="none"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                className="text-4xl"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-              </svg>
-            </button>
+
+            <div className="flex gap-x-3 md:hidden">
+              <div className="flex items-center">
+                <MobileLanguageSwitcher />
+              </div>
+            </div>
           </div>
         </div>
       </header>
