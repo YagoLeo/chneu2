@@ -225,7 +225,7 @@ export default function Home() {
             style={{ opacity: 1 }}
           >
             <div
-              className="bg-white px-12 pb-12 text-lg"
+              className="bg-white px-12 py-12 text-lg"
               style={{ opacity: 1 }}
             >
               <h6 className="text-2xl font-semibold mb-4">核心优势</h6>
